@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@namespace url("http://www.w3.org/1999/xhtml");
+
+@font-face {
+	font-family: 美咲ゴシック;
+	src: local(美咲ゴシック), local(MisakiGothic), url(assets/misaki_gothic.woff) format("woff");
+}
+
+@font-face {
+	font-family: PixelMplus10;
+	src: local(PixelMplus10), url(assets/PixelMplus10-Regular.woff) format("woff");
+}
+
+@font-face {
+	font-family: PixelMplus10;
+	src: local(PixelMplus10), url(assets/PixelMplus10-Bold.woff) format("woff");
+	font-weight: bold;
+}
+
+:root {
+	--page-width: 30em;
+}
+
+body {
+	color: black;
+	background: url("assets/milkcat-10_2-change-color.png") #ADE7FF;
+}
+
+a {
+	color: #3782F6;
+}
+
+a:visited {
+	color: #3782F6;
+	color: #2455A0;
+}
+
+h1, h2, [href="../"] {
+	font-family: PixelMplus10;
+}
+
+/*====================================
+	RPG風枠
+*/
+body > section:has(> h2):has(> p) {
+	border: solid #F7F3EF 1px;
+	padding: 0.5em;
+	color: #EEEEEE;
+	background: #313029;
+	border-radius: 0.4em;
+	box-shadow: inset 0 0 0 1px #93918B, 0 0 0 1px #93918B;
+	line-height: 1.3;
+	font-family: PixelMplus10;
+}

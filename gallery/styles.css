@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@namespace url("http://www.w3.org/1999/xhtml");
+
+/*====================================
+	カラムレイアウト
+*/
+body {
+	margin: unset;
+	height: 100vh;
+	display: flex;
+}
+
+body > * {
+	overflow-y: auto;
+}
+
+/*====================================
+	メニューバー
+*/
+body > nav {
+	border-right: solid 0.2em;
+	padding: 0.5em;
+	width: 10em;
+}
+
+#go-home h3 {
+	display: none;
+}
+
+#go-home a {
+	font-size: 2em;
+}
+
+body > nav h2 {
+	display: none;
+}
+
+body > nav ul {
+	list-style: none;
+	padding: unset;
+	font-family: PixelMplus10;
+	font-weight: bold;
+}
+
+body > nav ul ul {
+	padding-left: 1em;
+}
+
+body > nav > ul li {
+	margin: 0.7em 0;
+}
+
+body > nav > ul {
+	list-style: none;
+	font-family: PixelMplus10;
+	font-weight: bold;
+}
+
+/*====================================
+	画像表示領域
+*/
+#main {
+	order: 1;
+	flex-grow: 1;
+	text-align: center;
+}
+
+main ul {
+	list-style: none;
+	padding: unset;
+}
+
+main ul img {
+	object-fit: contain;
+	max-width: 100%;
+	max-height: 50em;
+	margin: 1em 0;
+}
